@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Student Attendance</h2>
+    <input type="date" id="attendance-date">
+
+    <div id="student-form">
+        <input type="text" id="student-name" placeholder="Enter student name">
+        <button class="btn" onclick="addStudent()">Add Student</button>
+    </div>
+
+    <table id="attendance-table">
+        <tr>
+            <th>Roll No</th>
+            <th>Student Name</th>
+            <th>Present</th>
+            <th>Absent</th>
+            <th>Action</th>
+        </tr>
+    </table>
+
+    <div id="totals">
+        Present: 0 | Absent: 0
+    </div>
+
+    <div style="text-align: center;">
+        <button class="btn" onclick="submitAttendance()">Submit Attendance</button>
+    </div>
+
+    <div id="result">
+        <h3>Attendance Summary</h3>
+        <ul id="attendance-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
